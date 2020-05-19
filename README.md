@@ -9,6 +9,10 @@ Steps to run testing:
 1. Run the predict_UNET.py to test images using U-Net model
 2. Run the predict_BCDU.py to test images using BCDU-Net model
 
+Preprocessing code and details are in the pre_processing file. The steps followed are: RGB to greyscale conversion, normalising, Contrast limited adaptive histogram equalisation, gamma adjustment and intensity scaling.
+
+Other changeable parameters (batch size, number of patches etc) are in the training files 
+
 Code used for U-Net model and preprocessing: https://github.com/orobix/retina-unet
 Code used for BCDU-Net model: https://github.com/rezazad68/BCDU-Net
 
